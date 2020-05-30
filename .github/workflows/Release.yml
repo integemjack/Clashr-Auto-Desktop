@@ -50,8 +50,7 @@ jobs:
         with:
           tag_name: v${{steps.package.outputs.version}}
           release_name: Clashr Auto v${{steps.package.outputs.version}}
-          body: |
-            ${{body}}
+          body: $body
           draft: false
           prerelease: false
 
